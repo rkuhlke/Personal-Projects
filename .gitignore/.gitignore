@@ -1,0 +1,252 @@
+package pokeFinder.pokemonMoon.Bobby;
+
+import java.util.Scanner;
+
+public class PokeFinder {
+	
+	public static void main(String [] args)	{
+		System.out.println("Pokemon Sun and Moon Locations");
+		System.out.println();
+		String lf = pokeFinder("Enter the Location: ");
+		System.out.println();
+		
+		String rn = "";
+		
+		try	{
+			switch (lf)	{
+				case "Route 1":
+					rn = Route1(lf);
+					break;
+				case "Route 2":
+					rn = Route2(lf);
+					break;
+				case "Route 3":
+					rn = Route3(lf);
+					break;
+				case "4":
+					rn = Route4(lf);
+					break;
+					/*
+				case "Route 5":
+					rn = Route5(lf);
+					break;
+				case "Route 6":
+					rn = Route6(lf);
+					break;
+				case "Route 7":
+					rn = Route7(lf);
+					break;
+				case "Route 8":
+					rn = Route8(lf);
+					break;
+				case "Route 9":
+					rn = Route9(lf);
+					break;
+				case "Route 10":
+					rn = Route10(lf);
+					break;
+				case "Route 11":
+					rn = Route11(lf);
+					break;
+				case "Route 12":
+					rn = Route12(lf);
+					break;
+				case "Route 13":
+					rn = Route13(lf);
+					break;
+				case "Route 14":
+					rn = Route14(lf);
+					break;
+				case "Route 15":
+					rn = Route15(lf);
+					break;
+				case "Route 16":
+					rn = Route16(lf);
+					break;
+				case "Route 17":
+					rn = Route17(lf);
+					break;
+					*/
+				default:
+					System.out.println("UnRecongnized Location");
+					return;
+			}
+			System.out.println();
+			System.out.println();
+			System.out.println("Note (Crabrawler - Berry Piles)");
+					
+			}catch(Exception e)	{
+					System.out.println("Number formating exception" + e.getMessage());
+		}
+	}
+	private static String Route1 (String Prompt) 	{
+		System.out.println("East - Walking");
+		System.out.println();
+		System.out.print
+				( "Pikipek - Common\n"
+				+ "Yungoos -- Day only - Common\n"
+				+ "Rattata (Alolan Form) -- Night only - Common\n"
+				+ "Caterpie - UnCommon\n"
+				+ "Ledyba -- Day only - UnCommon\n"
+				+ "Spinark -- Night only - UnCommon\n");
+		System.out.println();
+		
+		System.out.println("Hau'oli Outskirts - Walking");
+		System.out.println();
+		System.out.print
+				( "Magnemite - Common\n"
+				+ "Wingull - Common\n"
+				+ "Yungoos -- Day only - Common\n"
+				+ "Meowth (Alolan Form) - Common\n"
+				+ "Rattata (Alolan Form) - Common\n"
+				+ "Slowpoke - UnCommon\n"
+				+ "Grimer (Alolan Form) - UnCommon\n");
+		System.out.println();
+		
+		System.out.println("Hau'oli Outskirts - Surfing");
+		System.out.println();
+		System.out.print
+				( "Tentacool - Common\n"
+				+ "Finneon - Common\n"
+				+ "Wingull - UnCommon");
+		System.out.println();		
+
+		System.out.println("South - Walking");
+		System.out.println();
+		System.out.print
+				( "Yungoos -- Day only - Common\n"
+				+ "Rattata (Alolan Form) -- Night only - Common\n"
+				+ "Caterpie - UnCommon\n"
+				+ "Metapod - UnCommon\n"
+				+ "Ledyba -- Day only - UnCommon\n"
+				+ "Spinark -- Night only - UnCommon\n"
+				+ "Bonsly - UnCommon\n"
+				+ "Pikipek- UnCommon\n"
+				+ "Munchlax - Rare\n");
+		System.out.println();
+		
+		System.out.println("S.O.S Encounters");
+		System.out.println();
+		
+		System.out.print
+				( "Caterpie - UnCommon -- Called by Metapod\n"
+				+ "Snorlax - UnCommon -- Called by Munchlax\n"
+				+ "Happiny - UnCommon -- Called by Munchlax / Bonsly\n"
+				+ "Sudowoodo - Uncommon -- Called by Bonsly\n");
+		System.out.println();
+		
+		System.out.println("West - Walking");
+		System.out.println();
+		System.out.print
+				( "Yungoos -- Day only - Common\n"
+				+ "Rattata -- Night only - Common\n" 
+				+ "Caterpie - UnCommon\n"
+				+ "Metapod - UnCommon\n"
+				+ "Ledyba -- Day only - - UnCommon\n"
+				+ "Spinark -- Night only"
+				+ "Pikipek - UnCommon\n"
+				+ "Grubbin - UnCommon\n"
+				+ "Pichu - Rare\n");
+		System.out.println();
+		
+		System.out.println("S.O.S Encounters");
+		System.out.println();
+		System.out.println
+				( "Caterpie - UnCommon -- Called by Metapod\n"
+				+ "Pikachu - UnCommon -- Called by Pichu\n"
+				+ "Happiny - UnCommon -- Called by Pichu");
+		
+		return Prompt ;
+		
+	}
+	private static String Route2 (String Prompt)	{
+		System.out.println("North - Walking");
+		System.out.println();
+		System.out.println
+					( "Spearow - Common\n"
+					+ "Growlithe - UnCommon\n"
+					+ "Smeargle - UnCommon\n"
+					+ "Yungoose -- Day only - UnCommon\n"
+					+ "Cuitefly - UnCommon\n"
+					+ "Rattata (Alolan Form) -- Night only - UnCommon\n");
+		System.out.println();
+		
+		System.out.println("Shaking/Bubbling spots");
+		System.out.println();
+		System.out.println
+					( "Makuhita - Common\n"
+					+ "Yungoose -- Day only - Common\n"
+					+ "Rattata -- Night only - Common\n");
+		System.out.println();
+		System.out.println("South - Walking");
+		System.out.println();
+		System.out.println
+				( "Meowth (Alolan Form) - Common\n"
+				+ "Abra - UnCommon\n"
+				+ "Drowzee - UnCommon\n"
+				+ "Smeargle - UnCommon\n"
+				+ "Yungoose -- Day only - UnCommon\n"
+				+ "Rattata -- Night only - UnCommon\n");
+		System.out.println();
+		
+		System.out.println("Shaking/Bubbling spots");
+		System.out.println();
+		System.out.println
+					( "Makuhita - Common\n"
+					+ "Yungoose -- Day only - Common\n"
+					+ "Rattata -- Night only - Common\n");		
+		
+		return Prompt;
+	}
+	private static String Route3 (String Prompt)	{
+		System.out.println("North - Walking");
+		System.out.println();
+		System.out.println
+					( "Spearow - Common\n"
+					+ "Mankey - UnCommon\n"
+					+ "Delibird - UnCommon\n"
+					+ "Yungoose - Day Only - UnCommon\n"
+					+ "Cutiefly - UnCommon\n"
+					+ "Rattata (Alolan Form) -- Night only - Uncommon\n");
+		System.out.println();
+		
+		System.out.println("Shaking/Bubbling spots");
+		System.out.println();
+		System.out.println
+					( "Spearow\n"
+					+ "Rufflet (Sun Only) - Common\n"
+					+ "Vullaby (Moon Only) - Common\n");
+		System.out.println();
+		
+		System.out.println("South - Walking");
+		System.out.println();
+		System.out.println
+					( "Spearow - Common\n"
+					+ "Mankey - UnCommon\n"
+					+ "Yungoose -- Day only - UnCommon\n"
+					+ "Cutiefly - UnCommon\n"
+					+ "Rattata (Alolan Form) -- Night only - UnCommon\n"
+					+ "Bagon - Rare\n");
+		System.out.println();
+		System.out.println("S.O.S Encounters");
+		System.out.println();
+		System.out.println
+					( "Salamace -- Called by Bagon - UnCommon\n");
+		return Prompt;
+	}
+	private static String Route4 (String Prompt)	{
+		System.out.println("Walking");
+		System.out.println();
+		System.out.print
+				( "Lillipup - Common\n"
+				+ "Pikipek - Common\n"
+				+ "Igglybuff - UnCommon\n"
+				+ "");
+		return Prompt;
+	}
+	private static String pokeFinder(String Prompt)	{
+		System.out.print(Prompt);
+		Scanner sc = new Scanner(System.in);
+		return sc.nextLine();
+	}
+}
