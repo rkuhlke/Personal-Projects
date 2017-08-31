@@ -1,0 +1,42 @@
+package PersonalBudgets;
+
+import java.util.Scanner;
+
+public class Main {
+	public static void main (String [] args)	{
+		System.out.print("Enter the amount of bills you have per month: ");
+		Scanner sc = new Scanner (System.in);
+		int n = sc.nextInt();	
+		public static double sum = 0;
+		for(int i = 1; i <= n; i++)	{
+			System.out.print("Enter the amount for each bill: $");
+			double j = sc.nextDouble();
+			double temp = j;
+			sum = temp + sum;
+			}
+		System.out.println("The total debt is: $" + sum);
+		System.out.println("Do you get paid weekly or biweekely? (Enter 1 (for weekly) or 2 (for biweekly)");
+		String j = sc.nextLine();
+		
+		double result = 0;
+		try	{
+			switch(j)	{
+				case "1":
+					result = weekly(j);
+					break;
+				case "2":
+					result = biweekly(j);
+					break;
+				default:
+					System.out.println("Enter 1 or 2");
+					return;
+			}
+		}catch (Exception e){
+			System.out.println("Number formating exception " + e.getMessage());
+			}
+		}
+	private static double weekly(String j)	{
+		double d1 = sum/4;
+		return d1;
+		}
+	}
