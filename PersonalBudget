@@ -6,7 +6,10 @@ public class Main {
 	
 	public static void main (String [] args)	{
 		
+		//This program calculates the users debt based on their pay period and outputs the users spending money based 
+		
 		// user input how many bills 
+		
 		System.out.print("Enter the amount of bills you have per month: ");
 		Scanner sc = new Scanner (System.in);
 		int billAmount = sc.nextInt();
@@ -18,14 +21,13 @@ public class Main {
 		for(int i = 1; i <= billAmount; i++)	{
 			System.out.print("Enter the amount for each bill: $");
 			double bill = sc.nextDouble();
-			double temp = bill;
-			debt = temp + debt;
+			debt = bill + debt;
 		}
 		
 		//outputs users debts
 		
 		System.out.println();
-		System.out.println("The total debt is: $" + debt);
+		System.out.println("The total monthly debt is: $" + debt);
 		System.out.println();
 		
 		//user inputs paycheck amount
@@ -38,6 +40,9 @@ public class Main {
 		
 		String j = getInput("Do you get paid weekly or biweekely? (Enter 1 (for weekly) or 2 (for biweekly): ");
 		double result = 0;
+		
+		//based on pay period the weekly pay period the debt is divided by 4
+		//the biweekly pay period the debt is divided by 2
 		
 		try	{
 			switch(j)	{
